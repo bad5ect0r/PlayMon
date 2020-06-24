@@ -27,7 +27,7 @@ for row in rows:
 
         c = db.cursor()
         c.execute("UPDATE apps SET version=? WHERE id=?", (current_version, row_id))
-        c.commit()
 
+db.commit()
 db.close()
 
